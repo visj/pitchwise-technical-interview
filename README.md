@@ -28,7 +28,7 @@ The project is structured into the following key files:
 1. Clone the repository:
    ```bash
    git clone git@github.com:visj/pitchwise-technical-interview.git
-   cd pitchwise-interview
+   cd pitchwise-technical-interview
    ```
 2. Install dependencies:
    ```bash
