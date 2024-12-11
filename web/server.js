@@ -6,6 +6,7 @@ import { join } from "path";
 
 // src/types.ts
 var Operations = [
+  0 /* NoOp */,
   1 /* Reset */,
   2 /* AddRows */,
   3 /* DelRows */,
@@ -261,7 +262,6 @@ var InsightEngine = class {
    * @returns 
    */
   mutate() {
-    const length = this._insights.length;
     const operation = this.getRandomOperation();
     switch (operation) {
       case 2 /* AddRows */: {

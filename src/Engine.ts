@@ -3,11 +3,7 @@ import {
     InsightRow,
     Operation,
     Operations,
-    Mutation,
-    Reset,
-    AddRows,
-    DelRows,
-    SortRows
+    Mutation
 } from './types';
 import { actions, visitors } from "./mock";
 
@@ -58,7 +54,6 @@ export class InsightEngine {
      * @returns 
      */
     mutate(): Mutation {
-        const length = this._insights.length;
         const operation = this.getRandomOperation();
 
         switch (operation) {

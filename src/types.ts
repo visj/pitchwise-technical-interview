@@ -21,6 +21,7 @@ export const enum Operation {
 }
 
 export const Operations: Operation[] = [
+    Operation.NoOp,
     Operation.Reset,
     Operation.AddRows,
     Operation.DelRows,
